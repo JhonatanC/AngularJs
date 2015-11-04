@@ -8,7 +8,7 @@ var app = angular.module("MyFirstApp",[])
  * Controlador
  */
 app.controller("FirstController",function($scope){
-	$scope.nombre = "Jhonatan";
+	$scope.nombre = null;
 	$scope.nuevoComentario = {};
 	$scope.comentarios = [
 		{

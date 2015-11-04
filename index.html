@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Curso de AngularJs</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 </head>
 <body ng-controller="FirstController">
 
@@ -13,12 +12,14 @@
 
 	<h2>Comentarios</h2>
 	<ul>
+		<!--Recorrer formularios del $scope.comentarios-->
 		<li ng-repeat="comentario in comentarios">
+			<!--Campos que se imprimen desde el ng-model del input-->
 			{{ comentario.comentario }} - <strong>{{ comentario.username }}</strong>
 		</li>
 	</ul>
 
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="js/controller.js"></script>
 </body>
 </html>
