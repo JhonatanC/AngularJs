@@ -1,5 +1,5 @@
 var app = angular.module("MyFirstApp",[])
-
+// los parámetros $scope, $http son inyecciones de dependencias
 app.controller("FirstController",function($scope,$http){
 	$scope.posts = [];
 	// url 
