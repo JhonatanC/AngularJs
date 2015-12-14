@@ -20,10 +20,11 @@ app.controller("FirstController",function($scope){
 			username: "Juksoto"
 		}
 	];
-		$scope.agregarComentario = function(){
-			// push para añadir
-			$scope.comentarios.push($scope.nuevoComentario);
-			// reiniciar el nuevo comentario
-			$scope.nuevoComentario = {};
-		}
+
+    $scope.agregarComentario = function(){
+		// push agrega un nuevo elemento a un arreglo
+		$scope.comentarios.push($scope.nuevoComentario);
+		// reiniciar el nuevo comentario
+		$scope.nuevoComentario = {};
+	}
 });
