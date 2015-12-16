@@ -12,7 +12,7 @@ app.controller("FirstController",function($scope,$http){
 	})
 	// .error -> Algo salió mal | err parámegro que recibe del servidor
 	.error(function(err){
-
+        console.log(err);
 	});
 
     $scope.addPost = function(){
